@@ -1,0 +1,11 @@
+- name: "Libri Tranquilli"
+  icon: "book-2"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+- name: "Prodotti in Lana"
+  icon: "sock"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+- name: "Borse in Tessuto"
+  icon: "shopping-bag"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."

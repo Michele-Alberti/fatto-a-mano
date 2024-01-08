@@ -1,0 +1,23 @@
+<!-- Clients Aside -->
+<aside class="clients">
+  <div class="container text-center">
+    {% if site.sections.about.heading %}
+    <h2 class="section-heading">
+      {{ site.sections.clients.heading | capitalize }}
+    </h2>
+    {% endif %}
+    <div class="row">
+      {% for client in site.data.clients %}
+      <div class="col-md-3 col-sm-6">
+        <a href="{{ client.web }}" target="_blank">
+          <img
+            src="./assets/img/logos/{{ client.logo }}"
+            class="img-responsive img-centered"
+            alt="{{ client.img-alt }}"
+          />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</aside>

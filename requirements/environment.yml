@@ -1,0 +1,6 @@
+name: fatto-a-mano
+channels:
+  - conda-forge
+dependencies:
+  - compilers
+  - ruby

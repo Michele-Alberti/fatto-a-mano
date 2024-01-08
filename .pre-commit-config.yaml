@@ -1,0 +1,30 @@
+ci:
+  autofix_prs: false
+  autoupdate_branch: development
+  autoupdate_commit_msg: "ci(.pre-commit-config.yaml): pre-commit autoupdate"
+  autoupdate_schedule: weekly
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+repos:
+  #  - repo: https://github.com/thibaudcolas/pre-commit-stylelint
+  #    rev: v16.1.0
+  #    hooks:
+  #      - id: stylelint
+  #        args: [--allow-empty-input]
+  #        additional_dependencies:
+  #          # stylelint itself needs to be here when using additional_dependencies
+  #          - stylelint@14.8.2
+  #          - stylelint-config-standard@36.0.0
+  #          - stylelint-prettier@5.0.0
+  #          - stylelint-config-sass-guidelines@11.0.0
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.13.0
+    hooks:
+      - id: commitizen
+        stages:
+          - commit-msg

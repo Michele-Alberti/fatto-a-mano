@@ -1,0 +1,4 @@
+docs/_site/
+docs/vendor/
+docs/assets/main.css
+node_modules/

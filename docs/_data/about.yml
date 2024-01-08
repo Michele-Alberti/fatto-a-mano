@@ -1,0 +1,27 @@
+- name: "Da Dove Abbiamo Iniziato"
+  image: "1.jpg"
+  img-alt: "image description"
+  year: "2009-2011"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  side: left
+
+- name: "Esperienze in Fiera"
+  image: "2.jpg"
+  img-alt: "image description"
+  year: "Marzo 2011"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  side: right
+
+- name: "Regali per Famiglie"
+  image: "3.jpg"
+  img-alt: "image description"
+  year: "Dicembre 2012"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  side: left
+
+- name: "Tempi Recenti"
+  image: "4.jpg"
+  img-alt: "image description"
+  year: "Luglio 2014"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  side: right

@@ -1,0 +1,9 @@
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver"
+version = "0.0.1"
+changelog_file = "changelog.md"
+update_changelog_on_bump = true
+annotated_tag = true
+bump_message = "release $new_version (previous release $current_version)"

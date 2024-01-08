@@ -1,0 +1,92 @@
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        {% if site.sections.about.heading %}
+        <h2 class="section-heading">
+          {{ site.sections.contact.heading | capitalize }}
+        </h2>
+        {% endif %}
+        <h3 class="section-subheading text-muted">
+          Lorem ipsum dolor sit amet consectetur.
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form
+          class="gform"
+          name="sentMessage"
+          id="contactForm"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxpmCSj56bsm7bFnTgdI7UAgpTSUDmELjK2zseUn5miCGWuV34k2QHUd1noclChIby4bA/exec"
+        >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Nome *"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Email *"
+                  id="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="Messaggio *"
+                  id="message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <!-- Anti spam -->
+              <div class="form-group hidden">
+                <label for="honeypot">Honeypot</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="honeypot"
+                  id="honeypot"
+                  value=""
+                />
+              </div>
+              <!-- Success message -->
+              <div class="alert alert-success hidden" id="form_success_message">
+                <p>Richiesta inviata!</p>
+              </div>
+              <!-- Fail message -->
+              <div class="alert alert-danger hidden" id="form_fail_message">
+                <p>Qualcosa è andato storto!</p>
+              </div>
+              <!-- Spinner -->
+              <div class="hidden" id="form_spinner">
+                <i class="ti ti-loader-2 icon-spinner"></i>
+              </div>
+              <!-- Submit button -->
+              <button class="btn btn-xl">Invia</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
