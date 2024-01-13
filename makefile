@@ -20,7 +20,7 @@ help:
 	@echo -e " ${WHITE}  help                :${NC} prints this help message"
 	@echo -e " ${WHITE}  jekyll-new          :${NC} create a new Jekyll project folder (use only in empty projects)"
 	@echo -e " ${YELLOW}JEKYLL -----------------------------------------------------------------------------------------${NC}"
-	@echo -e " ${WHITE}  jekyll-serve        :${NC} builds docker image from Dockerfile"
+	@echo -e " ${WHITE}  jekyll-serve        :${NC} run the website locally"
 	@echo -e " ${YELLOW}CLEAN ------------------------------------------------------------------------------------------${NC}"
 	@echo -e " ${WHITE}  clean-folders       :${NC} cleans all folders and caches"
 	@echo -e " ${WHITE}  clean               :${NC} runs all clean rules"
