@@ -20,14 +20,14 @@ help:
 	@echo -e " ${WHITE}  help                :${NC} prints this help message"
 	@echo -e " ${WHITE}  jekyll-new          :${NC} create a new Jekyll project folder (use only in empty projects)"
 	@echo -e " ${YELLOW}JEKYLL -----------------------------------------------------------------------------------------${NC}"
-	@echo -e " ${WHITE}  jekyll-serve        :${NC} builds docker image from Dockerfile"
+	@echo -e " ${WHITE}  jekyll-serve        :${NC} run the website locally"
 	@echo -e " ${YELLOW}CLEAN ------------------------------------------------------------------------------------------${NC}"
 	@echo -e " ${WHITE}  clean-folders       :${NC} cleans all folders and caches"
 	@echo -e " ${WHITE}  clean               :${NC} runs all clean rules"
 	@echo -e " ${YELLOW}MISC -------------------------------------------------------------------------------------------${NC}"
 	@echo -e " ${WHITE}  pre-commit-run      :${NC} runs pre-commit hooks"
-	@echo -e " ${WHITE}  commitizen-bump     :${NC} runs commitizen for releasing a new version on master branch"
-	@echo -e " ${WHITE}  commitizen-push     :${NC} use git to push commits on 'development' and 'master' branches"
+	@echo -e " ${WHITE}  commitizen-bump     :${NC} runs commitizen for releasing a new version on main branch"
+	@echo -e " ${WHITE}  commitizen-push     :${NC} use git to push commits on 'development' and 'main' branches"
 	@echo -e "${RED}=======================|=========================================================================${NC}"
 	@echo ""
 
@@ -74,12 +74,12 @@ commitizen-bump:
 	conda activate ci-cd && \
 	git checkout development && \
 	git pull --ff-only && \
-	git checkout master && \
+	git checkout main && \
 	git pull --ff-only && \
 	git merge development --no-ff && \
 	cz bump --no-verify && \
 	git checkout development && \
-	git merge master --no-ff
+	git merge main --no-ff
 	@echo -e "${GREEN}done${NC}"
 
 commitizen-push:
@@ -88,7 +88,7 @@ commitizen-push:
 	conda activate ci-cd && \
 	git checkout development && \
 	git pull --ff-only && \
-	git checkout master && \
+	git checkout main && \
 	git pull --ff-only && \
 	git push &&\
 	git push --tags &&\
