@@ -1,12 +1,12 @@
-@import "variables.scss";
-@import "mixins.scss";
+@import "variables";
+@import "mixins";
 
 // Spinner transition
 .icon-spinner {
   display: inline-block;
   color: $theme-primary;
   font-size: 50px;
-  margin: 10px 0px;
+  margin: 10px 0;
   animation: 1s ease-out spin 0s infinite;
 }
 
@@ -14,6 +14,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(359deg);
   }

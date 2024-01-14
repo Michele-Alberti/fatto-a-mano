@@ -1,0 +1,133 @@
+@import "variables";
+@import "mixins";
+
+// Global Components
+
+body {
+  overflow-x: hidden;
+
+  @include body-font;
+}
+
+.text-muted {
+  color: $gray-light;
+}
+
+.text-primary {
+  color: $theme-primary;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+a {
+  color: $theme-primary;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: darken($theme-primary, 10%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+
+  font-weight: 700;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+.bg-light-gray {
+  background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+  background-color: $gray-darker;
+}
+
+// Restyled Primary Buttons
+
+.btn-primary {
+  @include button-variant($white, $theme-primary, $theme-primary);
+  @include heading-font;
+
+  font-weight: 700;
+}
+
+.btn-xl {
+  @include button-variant($white, $theme-primary, $theme-primary);
+  @include heading-font;
+
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+// Social Buttons
+
+ul.social-buttons {
+  margin-bottom: 0;
+
+  li {
+    a {
+      display: block;
+      background-color: $gray-darker;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      font-size: 20px;
+      line-height: 40px;
+      color: $white;
+      outline: none;
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $theme-primary;
+      }
+    }
+  }
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+
+// Highlight Color Customization
+
+::selection {
+  text-shadow: none;
+  background: $theme-primary;
+}
+
+img::selection {
+  background: transparent;
+}

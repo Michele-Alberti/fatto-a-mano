@@ -13,17 +13,20 @@
     background-color: darken($background, 10%);
     border-color: darken($border, 25%);
   }
+
   &:hover {
     color: $color;
     background-color: darken($background, 10%);
     border-color: darken($border, 12%);
   }
+
   &:active,
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
     background-color: darken($background, 10%);
     border-color: darken($border, 12%);
+    background-image: none;
 
     &:hover,
     &:focus,
@@ -33,11 +36,8 @@
       border-color: darken($border, 25%);
     }
   }
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
-  }
+
+  /* stylelint-disable */
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
@@ -48,6 +48,7 @@
       border-color: $border;
     }
   }
+  /* stylelint-enable */
 
   .badge {
     color: $background;
@@ -58,10 +59,7 @@
 // Background Cover Mixin
 
 @mixin background-cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
 }
 
 // Font Mixins
@@ -79,6 +77,6 @@
 }
 
 @mixin heading-font {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
