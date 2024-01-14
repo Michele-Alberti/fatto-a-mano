@@ -38,6 +38,13 @@
     },
   });
 
+  // Remove padding (bootstrap .fade bugfix)
+  $(".portfolio-link").click(function () {
+    setTimeout(function () {
+      $(".portfolio-modal").css({ padding: "0px" });
+    }, 200);
+  });
+
   // If the page is 404 always affix
   if ($("#container404").length) {
     var el = $(".affix-top");
