@@ -27,8 +27,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Please contact us for more info.
 author: Michi
 keyword: handmade fabric
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/fatto-a-mano" # the subpath of your site, e.g. /blog
+url: "https://michele-alberti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fatto-a-mano
 github_username: fatto-a-mano
 
