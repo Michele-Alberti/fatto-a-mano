@@ -51,8 +51,15 @@
     el.addClass("affix");
     el.removeClass("affix-top");
     console.log("page 404, force affix on navbar");
+    // Scrollspy works with simple # links
+    // Upgrade links in 404 page to be relative (otherwise they won't work)
     $("a").each(function (index, element) {
-      $(this).prop("href", "/" + $(element).attr("href"));
+      $(this).prop(
+        "href",
+        window.location.pathname.split("/").slice(0, -1).join("/") +
+          "/" +
+          $(element).attr("href"),
+      );
     });
   }
 })(jQuery); // End of use strict
