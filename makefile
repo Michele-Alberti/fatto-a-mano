@@ -21,6 +21,7 @@ help:
 	@echo -e " ${WHITE}  jekyll-new          :${NC} create a new Jekyll project folder (use only in empty projects)"
 	@echo -e " ${YELLOW}JEKYLL -----------------------------------------------------------------------------------------${NC}"
 	@echo -e " ${WHITE}  jekyll-serve        :${NC} run the website locally"
+	@echo -e " ${WHITE}  jekyll-build        :${NC} build the website"
 	@echo -e " ${YELLOW}CLEAN ------------------------------------------------------------------------------------------${NC}"
 	@echo -e " ${WHITE}  clean-folders       :${NC} cleans all folders and caches"
 	@echo -e " ${WHITE}  clean               :${NC} runs all clean rules"
@@ -48,6 +49,11 @@ jekyll-new:
 jekyll-serve:
 	@echo -e "${YELLOW}start jekyll server${NC}"
 	BUNDLE_GEMFILE=docs/Gemfile bundle exec jekyll serve --source docs --destination docs/_site
+	@echo -e "${GREEN}done${NC}"
+
+jekyll-build:
+	@echo -e "${YELLOW}build website${NC}"
+	BUNDLE_GEMFILE=docs/Gemfile bundle exec jekyll build --source docs --destination docs/_site
 	@echo -e "${GREEN}done${NC}"
 
 # Clean rules -----------------------------------------------------------------
